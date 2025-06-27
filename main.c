@@ -21,7 +21,8 @@
 int
 main()
 {
-	tiny_parser_open("./mappings.tiny", NULL);
+	TinyV2File file;
+	tiny_v2_parser_open("./mappings.tiny", "r", &file);
 
 	return 0;
 }
